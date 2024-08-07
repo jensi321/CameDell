@@ -12,43 +12,49 @@ const Header = () => {
             <Navbar expand="lg" className="">
                 <div className="top">
                     <Container>
-                        <div className="logo">
-                            <img src="assets/Image/logo.png" alt="Header Logo" />
+                        <div className="header-inner row">
+
+
+                            <div className="logo col-2">
+                                <div className="img-content">
+                                    <img src="assets/Image/logo.png" alt="Header Logo" />
+
+                                </div>
+                            </div>
+                            <div className="info col-10">
+                                <div className="search">
+                                    <input type="text" name="search" id="search" placeholder='Search for the coupons , deals and  offers' />
+                                    <button><FaSearch /></button>
+                                </div>
+                                <div className="points">
+                                    <img src="assets/Image/Coins.png" alt="Coins Logo" />
+                                    <p>100</p>
+                                </div>
+
+                                <DropdownButton id="dropdown-basic-button" className="login-dropdown" title="Members Login">
+                                    <Dropdown.Item href="">Member Login</Dropdown.Item>
+                                    <Dropdown.Item href="">Merchant Login</Dropdown.Item>
+                                    <Dropdown.Item href="">Operator Login</Dropdown.Item>
+                                </DropdownButton>
+
+                                <div className="scanner">
+                                    <Link to={''}><MdOutlineQrCodeScanner /></Link>
+                                </div>
+                                <div className="subscribe">
+                                    <Link to={''}><FaRegBell />
+                                    </Link>
+                                </div>
+                                <div className="loction-info">
+                                    <span><FaMapMarkerAlt /></span>
+                                    <span>West mambalam, Chennai - 600009</span>
+
+                                </div>
+
+                                <div className="avtar-img">
+                                    <Avatar src="assets/Image/avtar.png" />
+                                </div>
+                            </div>
                         </div>
-                        <div className="info">
-                            <div className="search">
-                                <input type="text" name="search" id="search" placeholder='Search for the coupons , deals and  offers' />
-                                <button><FaSearch /></button>
-                            </div>
-                            <div className="points">
-                                <img src="assets/Image/Coins.png" alt="Coins Logo" />
-                                <p>100</p>
-                            </div>
-
-                            <DropdownButton id="dropdown-basic-button" className="login-dropdown" title="Members Login">
-                                <Dropdown.Item href="">Member Login</Dropdown.Item>
-                                <Dropdown.Item href="">Merchant Login</Dropdown.Item>
-                                <Dropdown.Item href="">Operator Login</Dropdown.Item>
-                            </DropdownButton>
-
-                            <div className="scanner">
-                                <Link to={''}><MdOutlineQrCodeScanner /></Link>
-                            </div>
-                            <div className="subscribe">
-                                <Link to={''}><FaRegBell />
-                                </Link>
-                            </div>
-                            <div className="loction-info">
-                                <span><FaMapMarkerAlt /></span>
-                                <span>West mambalam, Chennai - 600009</span>
-
-                            </div>
-
-                            <div className="avtar-img">
-                                <Avatar src="assets/Image/avtar.png" />
-                            </div>
-                        </div>
-
                     </Container>
                 </div>
                 <div className="bottom">
@@ -63,7 +69,9 @@ const Header = () => {
                             <Nav.Link href="">Wallet</Nav.Link>
                         </Nav>
                         <DropdownButton id="dropdown-basic-button" className="login-dropdown" title="Members Login">
-                            <Dropdown.Item href="">Member Login</Dropdown.Item>
+                            <Dropdown.Item href="">Member Login
+
+                            </Dropdown.Item>
                             <Dropdown.Item href="">Merchant Login</Dropdown.Item>
                             <Dropdown.Item href="">Operator Login</Dropdown.Item>
                         </DropdownButton>

@@ -61,14 +61,14 @@ li {
     background-color: #fff;
 }
 
-.navbar .top .container,
+.navbar .top .header-inner,
 .navbar .top .info {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .top .logo {
+.navbar .top .img-content {
     display: block;
     width: 145px;
     margin-right: 10px;
@@ -665,6 +665,8 @@ li {
 
 .store-outer .left .text-content a {
     margin-top: 10px;
+    color: #fff;
+    background-color: #11A966;
 }
 
 .store-outer .right .inner {
