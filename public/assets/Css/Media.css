@@ -1,0 +1,253 @@
+@media (max-width:1200px) {
+    .navbar .top .search {
+        width: 250px;
+    }
+
+    .navbar .top .dropdown {
+        width: 170px;
+    }
+
+    .navbar .points p {
+        font-size: 20px;
+    }
+
+    .navbar .points {
+        width: 117.32px;
+        padding: 6px 15px;
+    }
+
+    /* TRENDING  strat */
+    .tranding-outer .cupon-code {
+        font-size: 12px;
+    }
+
+    /* TRENDING  End */
+
+
+
+}
+
+@media (max-width : 1200px) and (min-width:991px) {
+
+    /* Footer Start */
+    footer .app-icon img {
+        height: 30px;
+    }
+
+    footer .footer-heading h4 {
+        font-size: 18px;
+    }
+
+    footer .footer-menu li a {
+        font-size: 12px;
+    }
+
+    footer .latest-deal p {
+        font-size: 10px;
+    }
+
+    /* Footer End */
+
+    /* Subscribe Start */
+    .subscribe-outer .left {
+        margin: 35px 0;
+    }
+
+    .subscribe-outer .heading h3 {
+        font-size: 16px;
+    }
+
+    /* Subscribe End */
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+    }
+
+    /* Header start */
+
+
+    .navbar .top .loction-info,
+    .navbar .top .search,
+    .navbar .top .dropdown {
+        display: none;
+    }
+
+    .navbar .bottom .header-info-bottom {
+        display: block;
+    }
+
+    .navbar .points {
+        width: 28px;
+        height: 28px;
+        padding: 0;
+        align-items: center;
+        background-color: #fff;
+        margin: 0;
+    }
+
+    .navbar .points img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar .points p {
+        display: none;
+    }
+
+    .navbar .bottom .search,
+    .navbar .bottom .dropdown {
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar .bottom a {
+        font-size: 14px;
+        border: none !important;
+        text-align: left;
+        padding: 8px 15px !important;
+    }
+
+    .navbar .bottom .search {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .navbar .bottom .search button {
+        top: 9px;
+        left: 24px;
+    }
+
+    .navbar .bottom .dropdown button {
+        border: none;
+        background: none;
+        text-align: left;
+        padding-left: 0;
+        font-size: 14px;
+    }
+
+    /* Header End */
+
+    /* Slider Start */
+    .slider-outer .slider-inner {
+        padding: 10px 0px;
+    }
+
+    /* Slider End */
+
+    /* Tranding Start */
+    .tranding-outer .cupon-code {
+        display: inline-block;
+        width: 45%;
+        font-size: 12px;
+    }
+
+    /* Tranding End */
+
+    /* Subscribe Start */
+
+    .subscribe-outer .left {
+        order: 2;
+    }
+
+    .subscribe-outer .right {
+        order: 1;
+    }
+
+    .subscribe-outer .img-content {
+        text-align: center;
+    }
+
+    .subscribe-outer img {
+        width: 70% !important;
+        margin: 0 auto;
+    }
+
+    .subscribe-outer .text-content {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    /* Subscribe End */
+
+    /* Popular Store Start */
+    .store-outer .left .inner {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .store-outer .left {
+        margin-bottom: 30px;
+    } 
+    /* Popular Store End */
+
+
+
+}
+
+@media (max-width :767px) {
+    .tranding-outer .cupon-code {
+        width: 60%;
+    }
+
+    /* ~sUBSCRIBE Start */
+    .subscribe-inner {
+        margin: 0 50px;
+    }
+    .store-outer .left .img-content {
+        height: 100%;
+    }
+
+    /* ~sUBSCRIBE End */
+
+
+    /* Voucher Start */
+    .voucher-outer .item-inner span{
+        font-size: 12px;
+    }
+    /* Voucher End */
+}
+
+
+@media (max-width: 575px) {
+
+    /* Footer Start */
+    footer .footer-logo {
+        text-align: left;
+    }
+
+    footer .app-icon {
+        justify-content: start;
+        width: 300px;
+    }
+
+    footer .soical-icon-list {
+        width: 275px;
+    }
+
+    footer .footer-menu {
+        padding-bottom: 20px;
+    }
+
+    /* Footerr End */
+
+    /* Subscribe Start */
+
+    .subscribe-inner {
+        margin: 0;
+    }
+
+    .subscribe-outer .heading h3 {
+        font-size: 14px;
+    }
+
+    /* Subscribe End */
+    /* Popular Store Start */
+    .store-outer .left .inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Popular Store End */
+}
