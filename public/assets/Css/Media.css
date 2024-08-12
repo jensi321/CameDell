@@ -3,7 +3,7 @@
         width: 250px;
     }
 
-    .navbar .top .dropdown {
+    .navbar .top .login-dropdown.dropdown {
         width: 170px;
     }
 
@@ -16,12 +16,53 @@
         padding: 6px 15px;
     }
 
+    .navbar .loction-info span:nth-child(2) {
+        font-size: 10px;
+    }
+
     /* TRENDING  strat */
-    .tranding-outer .cupon-code {
+    .tranding-outer .cupon-code-button,
+    .discountcoupon-outer .cupon-code-button,
+    .cupon-outer .cupon-code-button {
         font-size: 12px;
     }
 
     /* TRENDING  End */
+
+
+    /* Cupon Start Cashback Start*/
+
+    .cupon-outer .cupon-inner .item,
+    .cashbackoffer-outer .item,
+    .cupon-offer-outer .item,
+    .discountcoupon-outer .item,
+    .cashback-store .item {
+        width: 25%;
+    }
+
+    /* Cupon End */
+
+    /* Voucher Start */
+    .voucher-outer .item-inner span,
+    .vouchercupon-outer .item-inner span,
+    .voucherpage-outer .item-inner span {
+        font-size: 12px;
+    }
+
+    /* Voucher End */
+
+
+
+
+    /* Sub Terms-condition Start */
+    .sub-model-outer,
+    .sub-terms-outer {
+        width: 30%;
+    }
+
+    /* Sub Terms-condition End */
+
+
 
 
 
@@ -58,6 +99,21 @@
     }
 
     /* Subscribe End */
+
+    /* scnner Start */
+    .scaner-outer .code {
+        font-size: 25px;
+    }
+
+    .scaner-outer .date-id span {
+        font-size: 17px;
+    }
+
+    .scaner-outer .date-id h4 {
+        font-size: 18px;
+    }
+
+    /* scnner End */
 }
 
 @media (max-width: 991px) {
@@ -66,13 +122,18 @@
     }
 
     /* Header start */
-    .navbar .top .info{
+    .navbar .top .info {
         justify-content: end;
     }
 
-    .navbar .top .loction-info,
+    .navbar .top .loction-info {
+        width: 28px;
+        height: 28px;
+    }
+
+    .navbar .top .loction-info span:last-child,
     .navbar .top .search,
-    .navbar .top .dropdown {
+    .navbar .top .login-dropdown.dropdown {
         display: none;
     }
 
@@ -89,6 +150,10 @@
         margin: 0;
     }
 
+    .navbar-nav {
+        padding-top: 55px;
+    }
+
     .navbar .points img {
         width: 25px;
         height: 25px;
@@ -96,6 +161,20 @@
 
     .navbar .points p {
         display: none;
+    }
+
+    .navbar .bottom {
+        position: relative;
+    }
+
+    .navbar .bottom #basic-navbar-nav {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 300px;
+        background: #A9D5B2;
+        height: 1200px;
+        z-index: 99;
     }
 
     .navbar .bottom .search,
@@ -128,21 +207,24 @@
         text-align: left;
         padding-left: 0;
         font-size: 14px;
+        color: #002408;
+    }
+
+    .navbar .navbar-toggler.collapsed .navbar-toggler-icon {
+        background-image: url(../Image/menu.png) !important;
+    }
+
+    .navbar .navbar-toggler .navbar-toggler-icon {
+        background-image: url(../Image/close.png) !important;
     }
 
     /* Header End */
 
-    /* Slider Start */
-    .slider-outer .slider-inner {
-        padding: 10px 0px;
-    }
-
-    /* Slider End */
-
     /* Tranding Start */
-    .tranding-outer .cupon-code {
-        display: inline-block;
-        width: 45%;
+    .tranding-outer .cupon-code-button,
+    .discountcoupon-outer .cupon-code-button,
+    .cupon-outer .cupon-code-button,
+    .cashback-store .cupon-code-button {
         font-size: 12px;
     }
 
@@ -179,24 +261,114 @@
         width: 50%;
         margin: 0 auto;
     }
+
     .store-outer .left {
         margin-bottom: 30px;
-    } 
+    }
+
     /* Popular Store End */
 
+    /* Sign in Start */
+    .login-outer,
+    .signup-outer {
+        width: 90%;
+    }
 
+    /* Sign in End */
+
+    /* Location Start */
+    .location-outer {
+        width: 40%;
+    }
+
+    /* Location End */
+
+    /* Scanner Start */
+    .scaner-outer {
+        width: 40%;
+    }
+
+    .scaner-outer .code {
+        font-size: 20px;
+    }
+
+    .scaner-outer .expiration h4,
+    .scaner-outer .referelid h4 {
+        font-size: 14px;
+    }
+
+
+    /* Scanner End */
+
+    /* Cupon Start Cashback Start*/
+
+    .cupon-outer .cupon-inner .item,
+    .cashbackoffer-outer .item,
+    .cupon-offer-outer .item,
+    .discountcoupon-outer .item,
+    .cashback-store .item {
+        width: 33.33%;
+    }
+
+    /* Cupon End */
+
+    /* Sub Terms-condition Start */
+    .sub-model-outer,
+    .sub-terms-outer {
+        width: 40%;
+    }
+
+    /* Sub Terms-condition End */
+
+    /* Suscription Plane Start */
+    .sub-plan-outer .item .item-inner {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+    /* Suscription Plane End */
+
+    /* Footer Start */
+    footer .bottom .bottom-inner {
+        display: block;
+        text-align: center;
+    }
+
+    footer .bottom ul {
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    /* Footer End */
+    /* Notification Start */
+    .notification-outer {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* Notification End */
+
+    /* Loyalty Points Start */
+    .loyaltipoints-outer {
+        width: 60%;
+    }
+
+    /* Loyalty Points End */
 
 }
 
 @media (max-width :767px) {
-    .tranding-outer .cupon-code {
-        width: 60%;
-    }
+
+
 
     /* ~sUBSCRIBE Start */
     .subscribe-inner {
         margin: 0 50px;
     }
+
     .store-outer .left .img-content {
         height: 100%;
     }
@@ -205,11 +377,97 @@
 
 
     /* Voucher Start */
-    .voucher-outer .item-inner span{
+    .voucher-outer .item-inner span,
+    .vouchercupon-outer .item-inner span {
         font-size: 12px;
     }
+
     /* Voucher End */
+    /* Location Start */
+    .location-outer {
+        width: 50%;
+    }
+
+    /* Location End */
+    /* Scanner Start */
+    .scaner-outer {
+        width: 60%;
+    }
+
+
+    /* Scanner End */
+
+    /* Cupon Start Cashback Start*/
+
+    .cupon-outer .cupon-inner .item,
+    .cashbackoffer-outer .item,
+    .cupon-offer-outer .item,
+    .discountcoupon-outer .item,
+    .cashback-store .item {
+        width: 50%;
+    }
+
+    /* Cupon End */
+
+    /* Cupon Decription Start */
+    .cupon-description-outer .code-button a {
+        display: inline;
+        padding: 10px 50px;
+    }
+
+    .cupon-description-outer .note {
+        padding-top: 30px;
+    }
+
+    .cupon-description-outer .heading h4 {
+        padding-bottom: 16px;
+    }
+
+    /* Cupon Decription Start */
+
+    /* Sub Terms-condition Start */
+    .sub-model-outer,
+    .sub-terms-outer {
+        width: 60%;
+    }
+
+    /* Sub Terms-condition End */
+
+    /* Pyment Details Start */
+    .pyment-detail-outer .pyment-detail-inner {
+        width: 100%;
+    }
+
+    /* Pyment Details End */
+
+    /* Dasbord Profile Start */
+
+    .profile-outer .profile-img {
+        padding: 0;
+        text-align: center;
+    }
+
+    .profile-outer .profile-img img {
+        max-width: 400px;
+    }
+
+    .profile-outer .text-content:last-child .submit-form a {
+        width: 100%;
+        display: block;
+    }
+
+    /* Dasbord Profile End */
+
+    /* Loyalty Points Start */
+    .loyaltipoints-outer {
+        width: 70%;
+    }
+
+    /* Loyalty Points End */
 }
+
+
+
 
 
 @media (max-width: 575px) {
@@ -250,6 +508,105 @@
         width: 100%;
         margin: 0 auto;
     }
-    
+
     /* Popular Store End */
+    /* Login Start */
+    .login-outer .left {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .login-outer .right {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .login-outer .privacy-check label {
+        font-size: 12px;
+    }
+
+    .merchant-login .img-content,
+    .operator-login .img-content {
+        text-align: center;
+        height: auto;
+        top: 0;
+        transform: translate(0, 0%);
+    }
+
+
+    /* Login End */
+    /* Location Start */
+    .location-outer {
+        width: 90%;
+    }
+
+    /* Location End */
+    /* Scanner Start */
+    .scaner-outer {
+        width: 90%;
+    }
+
+
+    /* Scanner End */
+
+    /* Cupon Start Cashback Start*/
+
+    .cupon-outer .cupon-inner .item,
+    .cashbackoffer-outer .item,
+    .cupon-offer-outer .item,
+    .discountcoupon-outer .item,
+    .cashback-store .item {
+        width: 100%;
+    }
+
+    /* Cupon End */
+
+    /* Cupon Descrtiption Start */
+    .cupon-description-outer .heading {
+        text-align: center;
+    }
+
+    .cupon-description-outer .heading h3 {
+        display: block;
+    }
+
+    .cupon-description-outer .heading .button {
+        margin-left: 0;
+    }
+
+    .cupon-description-outer .img-content .img-group {
+        display: flex;
+        order: 2;
+    }
+
+    .cupon-description-outer .img-group img {
+        margin-top: 25px;
+        margin-bottom: 0 !important;
+        padding: 0 10px;
+    }
+
+    /* Cupon Descrtiption End */
+
+    /* Sub Terms-condition Start */
+    .sub-model-outer {
+        width: 90%;
+    }
+
+    .sub-terms-outer {
+        width: 80%;
+    }
+
+    /* Sub Terms-condition End */
+    /* Notification Start */
+    .notification-outer {
+        width: 90%;
+    }
+
+    /* Notification End */
+
+    /* Loyalty Points Start */
+    .loyaltipoints-outer {
+        width: 90%;
+    }
+
+    /* Loyalty Points End */
+
 }

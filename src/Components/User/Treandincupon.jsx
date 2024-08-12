@@ -103,7 +103,7 @@ const Treandincupon = () => {
                                             <div className="text-content">
                                                 <p>{i.sale}</p>
                                                 <div className="cupon-button">
-                                                    <Link to='' className='cupon-code'><span className='cupon'>get Coupons</span><span className='code'>2511545614</span></Link>
+                                                    <Link to='' className='cupon-code-button'><span className='cupon'>get Coupons</span><span className='code'>2511545614</span></Link>
                                                     
                                                 </div>
                                             </div>

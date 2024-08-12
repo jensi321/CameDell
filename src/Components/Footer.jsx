@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaAngleRight, FaFacebook, FaInstagram, FaXTwitter, FaYoutube } from 'react-icons/fa6'
+import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -17,35 +17,7 @@ const Footer = () => {
                   <img src="assets/Image/GooglePlay.png" alt="Google Play" />
                   <img src="assets/Image/AppStore.png" alt="App Store" />
                 </div>
-                <div className="footer-heading">
-                  <h4>Follow Us</h4>
-                </div>
-                <div className="soical-icon-list">
-                  <ul className="icons">
-                    <li>
-                      <Link to=''>
-                        <FaFacebook />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to=''>
-                        <FaYoutube />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to=''>
-                        <FaInstagram />
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to=''>
-                        <FaXTwitter />
-                      </Link>
-                    </li>
 
-                  </ul>
-                  
-                </div>
 
               </div>
 
@@ -84,62 +56,99 @@ const Footer = () => {
                     <Link to=''>Partner With Us</Link>
                   </li>
                   <li>
+                    <Link to=''>Influencers Partnership</Link>
+                  </li>
+                  <li>
                     <Link to=''>Contact Us</Link>
                   </li>
                   <li>
-                    <Link to=''>FAQs</Link>
+                    <Link to=''>Press Room</Link>
                   </li>
                   <li>
                     <Link to=''>Careers</Link>
                   </li>
+                  <li>
+                    <Link to=''>FAQs</Link>
+                  </li>
+
                 </ul>
               </div>
 
               <div className="col-12 col-sm-6 col-lg-2 item">
                 <div className="footer-heading">
-                  <h4>Get to Know us</h4>
+                  <h4>Legal</h4>
                 </div>
                 <ul className='footer-menu'>
                   <li>
-                    <Link to=''>About Us</Link>
+                    <Link to=''>Privacy Policy</Link>
                   </li>
                   <li>
-                    <Link to=''>Partner With Us</Link>
+                    <Link to=''>Reward Terms</Link>
                   </li>
                   <li>
-                    <Link to=''>Contact Us</Link>
+                    <Link to=''>Terms & Conditions</Link>
                   </li>
                   <li>
-                    <Link to=''>FAQs</Link>
+                    <Link to=''>Cookies Policy</Link>
                   </li>
                   <li>
-                    <Link to=''>Careers</Link>
+                    <Link to=''>Modern Slavery Policy</Link>
                   </li>
                 </ul>
 
               </div>
               <div className="col-12 col-sm-6 col-lg-3 item">
-                <div className="latest-deal">
-                  <div className="footer-heading">
-                    <h4>Follow Us</h4>
-                  </div>
-                  <form method='post'>
-                    <div className="input-groups">
-                      <input type="email" name="email" id="email" placeholder='Email Address' />
-                      <button>
-                        <FaAngleRight />
-                      </button>
-                    </div>
-                  </form>
-                  <p>By subscription, I agree to the terms of use and have read the privacy statement</p>
+                <div className="footer-heading">
+                  <h4>Follow Us</h4>
                 </div>
+                <div className="soical-icon-list">
+                  <ul className="icons">
+                    <li>
+                      <Link to=''>
+                        <FaFacebook />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to=''>
+                        <FaInstagram />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to=''>
+                        <FaTwitter />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to=''>
+                        <FaLinkedin />
+                      </Link>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div className="footer-heading">
+                  <h4>Sign up for the latest deals</h4>
+                </div>
+
+                <form method='post'>
+                  <div className="input-groups">
+                    <input type="email" name="email" id="email" placeholder='Email Address' />
+                    <button>
+                      <FaAngleRight />
+                    </button>
+                  </div>
+                </form>
+                <p>By subscription, I agree to the terms of use and have read the privacy statement</p>
               </div>
+
             </div>
           </div>
 
           <div className="bottom">
             <div className="bottom-inner">
-              <p>From Dreams to Reality.  Copyright © 2024 Calgell Bharat Private Limited. All Rights Reserved.</p>
+              <p><b>From Dreams to Reality. </b> Copyright © 2024 Calgell Bharat Private Limited. All Rights Reserved.</p>
             </div>
           </div>
         </div>
