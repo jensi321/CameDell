@@ -84,8 +84,8 @@ const DealofDay = () => {
                                                 <img src={i.img} alt={i.name} />
                                             </div>
 
-                                            <div className="price">₹<b>
-                                                {i.price}</b>
+                                            <div className="price">
+                                            <span className='ruppes-icon'>₹ </span> {i.price}
                                                 <span><strike>{i.originalprice}</strike></span></div>
                                             <Link to='' className='button'>Buy now</Link>
                                         </div>

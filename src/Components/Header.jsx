@@ -3,7 +3,7 @@ import { Container, Dropdown, DropdownButton, DropdownItem, Modal, Nav, Navbar }
 import { FaMapMarkerAlt, FaSearch } from 'react-icons/fa'
 import { FaHeart, FaRegBell, FaUser } from 'react-icons/fa6'
 import { MdOutlineQrCodeScanner } from 'react-icons/md'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Merchantlogin from './Merchant/Merchantlogin'
 import Operatorlogin from './Operator/Operatorlogin'
 import Login from './User/Login'
@@ -78,9 +78,9 @@ const Header = () => {
 
 
                                 <DropdownButton id="dropdown-basic-button" className="login-dropdown" title="Members Login">
-                                    <DropdownItem href="" onClick={handleMemberLogin}>Member Login</DropdownItem>
-                                    <DropdownItem href="" onClick={handleMerchantLogin}>Merchant Login</DropdownItem>
-                                    <DropdownItem href="" onClick={handleOperatorLogin}>Operator Login</DropdownItem>
+                                    <DropdownItem as={Link} to="" onClick={handleMemberLogin}>Member Login</DropdownItem>
+                                    <DropdownItem as={Link} to="" onClick={handleMerchantLogin}>Merchant Login</DropdownItem>
+                                    <DropdownItem as={Link} to="" onClick={handleOperatorLogin}>Operator Login</DropdownItem>
                                 </DropdownButton>
 
                                 <div className="scanner">
@@ -103,9 +103,10 @@ const Header = () => {
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
-                                            <Dropdown.Item href="/dashbord"><FaUser /> Dashboard</Dropdown.Item>
-                                            <Dropdown.Item href=""><FaHeart /> Wishlist</Dropdown.Item>
-                                            <Dropdown.Item href=""><IoLogOut /> Logout</Dropdown.Item>
+                                            <DropdownItem as={Link} to="/dashbord"><FaUser /> Dashboard</DropdownItem>
+                                            <DropdownItem as={Link} to=""><FaHeart /> Wishlist</DropdownItem>
+                                            <DropdownItem as={Link} to=""> <IoLogOut /> Logout</DropdownItem>
+
                                         </Dropdown.Menu>
                                     </Dropdown>
                                 </div>
@@ -117,19 +118,19 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-center'>
                         <Nav className="">
-                            <Nav.Link href="/">All</Nav.Link>
-                            <Nav.Link href="/">Categories</Nav.Link>
-                            <Nav.Link href="">Discount</Nav.Link>
-                            <Nav.Link href="">Cashback</Nav.Link>
-                            <Nav.Link href="">Vouchers</Nav.Link>
-                            <Nav.Link href="">Wallet</Nav.Link>
+                            <NavLink to="/">All</NavLink>
+                            <NavLink to="/">Categories</NavLink>
+                            <NavLink to="">Discount</NavLink>
+                            <NavLink to="">Cashback</NavLink>
+                            <NavLink to="">Vouchers</NavLink>
+                            <NavLink to="">Wallet</NavLink>
                         </Nav>
                         <DropdownButton id="dropdown-basic-button" className="login-dropdown" title="Members Login">
-                            <Dropdown.Item href="" onClick={handleMemberLogin}>Member Login
+                            <DropdownItem as={Link} to='' onClick={handleMemberLogin}>Member Login
 
-                            </Dropdown.Item>
-                            <Dropdown.Item href="" onClick={handleMerchantLogin}>Merchant Login</Dropdown.Item>
-                            <Dropdown.Item href="" onClick={handleOperatorLogin}>Operator Login</Dropdown.Item>
+                            </DropdownItem>
+                            <DropdownItem as={Link} to='' onClick={handleMerchantLogin}>Merchant Login</DropdownItem>
+                            <DropdownItem as={Link} to='' onClick={handleOperatorLogin}>Operator Login</DropdownItem>
                         </DropdownButton>
                         <div className="search">
                             <input type="text" name="search" id="search" placeholder='Search for the coupons , deals and  offers' />

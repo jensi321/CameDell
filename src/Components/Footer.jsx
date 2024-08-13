@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6'
+import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaSquareXTwitter } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -115,7 +115,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link to=''>
-                        <FaTwitter />
+                        <FaSquareXTwitter />
                       </Link>
                     </li>
                     <li>

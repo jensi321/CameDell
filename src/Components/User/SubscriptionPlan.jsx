@@ -38,7 +38,7 @@ const SubscriptionPlan = () => {
                                         <>
                                             <div className="item col-lg-4 col-12">
                                                 <div className="item-inner">
-                                                    <div className="h3" style={{ color: `${i.textcolor}` }}>{i.name}</div>
+                                                    <h3 style={{ color: `${i.textcolor}` }}>{i.name}</h3>
                                                     <div className="img-content">
                                                         <img src={i.img} alt={i.name} />
                                                     </div>

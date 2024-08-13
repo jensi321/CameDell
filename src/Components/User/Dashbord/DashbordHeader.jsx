@@ -11,6 +11,8 @@ import { TfiMenuAlt } from 'react-icons/tfi'
 import Profile from './Profile'
 import MyCupon from './MyCupon'
 import SubscriptionPlan from '../SubscriptionPlan'
+import Wallet from './Wallet'
+import SubscriptionHistory from './SubscriptionHistory'
 
 const DashbordHeader = () => {
     return (
@@ -44,7 +46,7 @@ const DashbordHeader = () => {
                     {
                         label: 'Wallet',
                         key: '4',
-                        children: 'Wallet',
+                        children: <Wallet />,
                         icon: <GiWallet />
 
                     },
@@ -58,7 +60,7 @@ const DashbordHeader = () => {
                     {
                         label: 'Subscription History',
                         key: '6',
-                        children: 'Subscription History',
+                        children: <SubscriptionHistory />,
                         icon: <MdWorkHistory />
 
                     },

@@ -61,8 +61,17 @@
     }
 
     /* Sub Terms-condition End */
+    /* Wallet Dashbord Start */
 
+    .wallet-outer .balance-outer .your-balance {
+        width: 20%;
+    }
 
+    .wallet-history .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+        padding: 0 50px;
+    }
+
+    /* Wallet Dashbord End */
 
 
 
@@ -114,6 +123,8 @@
     }
 
     /* scnner End */
+
+
 }
 
 @media (max-width: 991px) {
@@ -358,6 +369,29 @@
 
     /* Loyalty Points End */
 
+
+    /* Wallet Dashbord Start */
+
+    .wallet-outer .balance-outer .your-balance {
+        width: 30%;
+    }
+
+
+    .wallet-history .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+        padding: 0 30px;
+    }
+
+    .withdrawal-outer.modal.show {
+        width: 50%;
+    }
+
+    .bank-outer .bank-inner {
+        width: 100%;
+    }
+
+    /* Wallet Dashbord End */
+
+
 }
 
 @media (max-width :767px) {
@@ -464,6 +498,18 @@
     }
 
     /* Loyalty Points End */
+    /* Wallet Dashbord Start */
+
+    .wallet-outer .balance-outer .your-balance {
+        width: 40%;
+    }
+
+    .withdrawal-outer.modal.show {
+        width: 80%;
+    }
+
+
+    /* Wallet Dashbord End */
 }
 
 
@@ -480,6 +526,15 @@
     footer .app-icon {
         justify-content: start;
         width: 300px;
+    }
+
+    footer .app-icon {
+        display: block;
+        text-align: left;
+    }
+
+    footer .app-icon img {
+        width: auto;
     }
 
     footer .soical-icon-list {
@@ -608,5 +663,25 @@
     }
 
     /* Loyalty Points End */
+
+    /* Wallet Dashbord Start */
+    .wallet-outer .balance-outer {
+        display: block;
+    }
+
+    .wallet-outer .balance-outer .your-balance {
+        width: 100%;
+    }
+
+    .wallet-outer .balance-outer .item {
+        margin-bottom: 20px;
+    }
+
+
+    .withdrawal-outer.modal.show {
+        width: 90%;
+    }
+
+    /* Wallet Dashbord End */
 
 }

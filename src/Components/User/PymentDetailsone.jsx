@@ -28,17 +28,17 @@ const PymentDetailsone = () => {
                                 <div className="item-inner">
                                     <div className="wallet-amount">
                                         <p>Wallet amount</p>
-                                        <div className="amount">₹ 400 <Link to=''>Use now</Link></div>
+                                        <div className="amount"><span><span className='ruppes-icon'>₹ </span> 400</span> <Link to=''>Use now</Link></div>
                                     </div>
                                     <div className="payment-details">
 
                                         <h3>Payment Details :</h3>
 
-                                        <p><span>Sub - Total amount </span> <span>: ₹ 500</span></p>
-                                        <p><span>Wallet amount  </span> <span>: ₹ 400</span></p>
+                                        <p><span>Sub - Total amount </span> <span>: <span className='ruppes-icon'>₹ </span> 500</span></p>
+                                        <p><span>Wallet amount  </span> <span>: <span className='ruppes-icon'>₹ </span> 400</span></p>
 
                                         <div className="line"></div>
-                                        <p><span>Wallet amount  </span> <span>: ₹ 100</span></p>
+                                        <p><span>Wallet amount  </span> <span>: <span className='ruppes-icon'>₹ </span> 100</span></p>
 
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@ const PymentDetailsone = () => {
                                         <div className="text-content">
                                             <h3>Premium</h3>
                                             <span>PER Month</span>
-                                            <p className="ruppes">₹
+                                            <p className="ruppes"><span className='ruppes-icon'>₹ </span>
                                                 <span> 500</span>
                                             </p>
                                         </div>

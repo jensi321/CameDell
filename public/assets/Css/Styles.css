@@ -2,7 +2,8 @@ body {
     font-family: "Poppins", sans-serif !important;
     font-size: 14px;
     font-weight: normal;
-    line-height: normal
+    line-height: normal;
+    overflow-x: hidden;
 }
 
 a {
@@ -22,6 +23,10 @@ ul {
 li {
     padding: 0;
     margin: 0;
+}
+
+input {
+    outline: none;
 }
 
 .heading {
@@ -56,6 +61,11 @@ li {
     color: #002408;
 }
 
+
+.ruppes-icon {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /* Header Start  */
 
 .navbar {
@@ -73,7 +83,7 @@ li {
 .navbar .top .info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navbar .top .img-content {
@@ -1040,7 +1050,8 @@ li {
     padding-bottom: 10px;
 }
 
-.deal-outer .deal-inner .price span {
+
+.deal-outer .deal-inner .price strike {
     padding-left: 10px;
     font-size: 14px;
     font-weight: 500;
@@ -2029,6 +2040,7 @@ footer .bottom p {
     font-size: 26px;
     font-weight: 600;
     padding-bottom: 20px;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .sub-plan-outer .item .item-inner {
@@ -2038,8 +2050,15 @@ footer .bottom p {
     border-radius: 18px;
 }
 
+.sub-plan-outer .item .item-inner h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 21.41px;
+    font-weight: 800;
+
+}
+
 .sub-plan-outer .img-content {
-    height: 40px;
+    height: 50px;
 }
 
 .sub-plan-outer .item img {
@@ -2050,12 +2069,17 @@ footer .bottom p {
 .sub-plan-outer .rupees {
     font-size: 24.71px;
     font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
 
 }
+
+
 
 .sub-plan-outer .monthly-plan {
     font-size: 10px;
     font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+
 }
 
 .sub-plan-outer ul {
@@ -2065,6 +2089,8 @@ footer .bottom p {
 .sub-plan-outer ul li {
     display: block;
     padding: 6px 0;
+    font-family: "Poppins", sans-serif !important;
+
     font-size: 12px;
     font-weight: 500;
 
@@ -2433,40 +2459,40 @@ footer .bottom p {
     background-color: #F3F3F3;
 }
 
-.dashbordheader .ant-tabs-nav {
+.dashbordheader>.ant-tabs-nav {
     background-color: #A9D5B2;
     margin-top: 10px;
     margin-bottom: 0;
 }
 
-.dashbordheader .ant-tabs-nav .ant-tabs-nav-list>.ant-tabs-tab-active:active {
+.dashbordheader>.ant-tabs-nav .ant-tabs-nav-list>.ant-tabs-tab-active:active {
     background: #000 !important;
 }
 
 
 
-.dashbordheader .ant-tabs-tab-btn span:last-child {
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab-btn span:last-child {
     display: none;
 }
 
-.dashbordheader .ant-tabs-tab-active .ant-tabs-tab-btn span:last-child {
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn span:last-child {
     display: inline;
     font-family: "Poppins", sans-serif !important;
 }
 
 
-.dashbordheader .ant-tabs-tab .ant-tabs-tab-btn {
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
     font-size: 20px;
     color: #291F1D;
 }
 
-.dashbordheader .ant-tabs-tab-active {
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab-active {
     background-color: #002408;
     border-radius: 0 20px 20px 20px;
     padding: 10px !important;
 }
 
-.dashbordheader .ant-tabs-tab-active .ant-tabs-tab-btn {
+.dashbordheader>.ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
     color: #fff !important;
 }
 
@@ -2813,3 +2839,481 @@ footer .bottom p {
 }
 
 /* Won Loyaltiy Points End*/
+
+/* Wallet Dashbord Start */
+.wallet-outer {
+    display: block;
+    padding: 30px 0;
+}
+
+.wallet-outer .wallet-inner {
+    display: block;
+}
+
+.wallet-outer .balance-outer {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.wallet-outer .balance-outer .item {
+    padding: 0 10px;
+}
+
+.wallet-outer .balance-outer .your-balance {
+    width: 16%;
+}
+
+.wallet-outer .balance-outer .item .item-inner {
+    border-radius: 16px;
+    box-shadow: 0px 2.19px 7.77px 0px #736C6C40;
+    padding: 15px;
+}
+
+.wallet-outer .balance-outer .your-balance .item-inner {
+    background-color: #FFD392;
+}
+
+.wallet-outer .balance-outer .total-income .item-inner {
+    background-color: #AFECFF;
+}
+
+.wallet-outer .balance-outer .total-expenses .item-inner {
+    background-color: #E2FFBC;
+}
+
+.wallet-outer .balance-outer .item .item-inner .heading h4 {
+    font-size: 17.24px;
+    font-weight: 800;
+    color: #002408;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.wallet-outer .balance-outer .item .item-inner .balnce-amount {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.wallet-outer .balance-outer .item .item-inner .income-amount,
+.wallet-outer .balance-outer .item .item-inner .expenses-amount {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 32.83px;
+    font-weight: 800;
+}
+
+.wallet-outer .balance-outer .item .use-now {
+    display: block;
+    text-align: right;
+}
+
+.wallet-outer .balance-outer .item .use-now a {
+    background-color: #000000;
+    color: #fff;
+    padding: 8PX 20PX;
+    border-radius: 20PX;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12.81px;
+    font-weight: 800;
+    line-height: 11.54px;
+    text-align: center;
+
+}
+
+.wallet-history {
+    padding: 30px 0;
+}
+
+.wallet-history .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wallet-history .ant-tabs-nav {
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.wallet-history .ant-tabs-tab {
+    background-color: #fff;
+    border: 0.88px solid #9B9B9B;
+    box-shadow: 2px 2px 3.2px 0px #00000040;
+    border-radius: 30px;
+}
+
+.wallet-history .ant-tabs-nav .ant-tabs-tab .ant-tabs-tab-btn {
+    color: #000000;
+    padding: 0 80px;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px;
+    font-weight: 800;
+
+}
+
+
+.wallet-history .ant-tabs-tab.ant-tabs-tab-active,
+.wallet-history .ant-tabs-tab:hover {
+    color: #fff;
+    background-color: #002408;
+    border-radius: 30px;
+    border: none;
+    box-shadow: none;
+}
+
+.wallet-history .ant-tabs-nav .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.wallet-history .ant-tabs-tab:hover .ant-tabs-tab-btn {
+    color: #fff;
+}
+
+/* Bank Account Start */
+.bank-outer {
+    display: block;
+    padding-top: 35px;
+}
+
+.bank-outer .bank-inner {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.bank-outer .input-group {
+    padding: 15px;
+    display: block;
+}
+
+.bank-outer label {
+    width: 100%;
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #291F1D;
+    padding-bottom: 10px;
+}
+
+.bank-outer input {
+    width: 100%;
+    padding: 10px;
+    box-shadow: none;
+    border: 1px solid #D8D8D8;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 20px !important;
+}
+
+.bank-outer .or {
+    position: relative;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.bank-outer .or::after {
+    content: '';
+    background-color: #DCDCDC;
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 10px;
+}
+
+.bank-outer .or span {
+    padding: 10px;
+    border: 1px solid #D8D8D8;
+    background: #fff;
+    border-radius: 20px;
+    z-index: 111;
+    position: relative;
+}
+
+.bank-outer .input-buton {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bank-outer .button {
+    display: inline;
+    padding: 10px 60px;
+    border-radius: 30px;
+}
+
+/* Bank Account End */
+
+/* Withdrawal Amount Start*/
+
+
+
+.withdrawal-outer.modal.show {
+    display: block;
+    width: 30%;
+    background-color: #fff;
+    position: relative;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.withdrawal-outer .withdrawal-inner {
+    padding: 20px;
+}
+
+.withdrawal-outer input[type='text'] {
+    border-radius: 20px;
+    border: 1px solid #E1E1E1;
+    background: #F2F2F2;
+    color: #858585;
+    padding: 10px;
+    width: 100%;
+}
+
+.withdrawal-outer .check-group {
+    display: flex;
+    padding: 10px 0;
+}
+
+.withdrawal-outer .check-group input {
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif !important;
+
+}
+
+.withdrawal-outer .verify-account {
+    display: block;
+    padding-top: 10px;
+    color: #0F26F2;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.withdrawal-outer .warning {
+    display: block;
+    padding-top: 10px;
+    color: #F20F0F;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.withdrawal-outer .warning a {
+    color: #002408;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.check-group label {
+    font-size: 10px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.withdrawal-outer .withdrawal-button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.withdrawal-outer .withdrawal-button .button {
+    display: inline;
+    padding: 10px 50px;
+}
+
+/* Withdrawal Amount End*/
+
+/* Subscription Item Start */
+
+.expenses-outer {
+    display: block;
+    padding-top: 70px;
+}
+
+.subcription-item {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.subcription-item .item-inner {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    align-items: center;
+    border: 0.83px solid #FFF6F6;
+    justify-content: space-between;
+    box-shadow: 0px 1.67px 5.92px 0px #736C6C40;
+
+}
+
+.subcription-item .img-content {
+    width: 20%;
+}
+
+.subcription-item .img-content img {
+    width: 100%;
+}
+
+.subcription-item .text-content {
+    width: 80%;
+    margin-left: 15px;
+}
+
+.subcription-item .text-content h3 {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.subcription-item .text-content .date-info {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5PX;
+    margin-bottom: 8PX;
+}
+
+.subcription-item .text-content .cupon-limit {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 8PX;
+}
+
+
+.subcription-item .text-content .wallet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subcription-item .text-content .usedwallet {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.subcription-item .text-content .wallet P {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.subcription-item .text-content .wallet P span {
+    font-size: 24PX;
+}
+
+
+/* Subscription Item End */
+
+
+/* Subscription-History Start */
+
+.sub-history-outer {
+    display: block;
+    padding: 50px 0;
+}
+
+.sub-history-outer .sub-history-inner {
+    display: block;
+}
+
+.sub-history-outer .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+/* Subscription-History End */
+
+/* List View Button start*/
+
+.list-view button {
+    background-color: #A9D5B2;
+    border: 1px solid #A9D5B2;
+    color: #002408;
+    border-radius: 20px;
+    font-size: 15.93px;
+    font-weight: 700;
+
+
+}
+
+.list-view .btn:focus-visible,
+.list-view .btn.show,
+.list-view .btn:hover {
+    background-color: #A9D5B2;
+    border: 1px solid #A9D5B2;
+    color: #002408;
+}
+
+.list-view .dropdown-menu.show {
+    background-color: #A9D5B2;
+    border-radius: 20px;
+}
+
+.list-view .dropdown-menu.show a {
+    font-size: 15.93px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif !important;
+    text-align: center;
+    color: #002408;
+}
+
+.list-view .dropdown-menu.show a:first-child {
+    border-bottom: 1px solid #88C194;
+}
+
+.list-view .dropdown-item:focus,
+.list-view .dropdown-item:hover,
+.list-view .dropdown-item:active {
+    color: #002408;
+    background-color: transparent;
+}
+
+/* List View Button End */
+
+.income-outer .item {
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #FFF6F6;
+    box-shadow: 0px 1.76px 6.26px 0px #736C6C40;
+    border-radius: 15px;
+}
+
+.income-outer .item .item-inner {
+    display: block;
+    padding: 15px;
+}
+
+.income-outer .item .item-inner .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.income-outer .item .item-inner .top img {
+    height: 15px;
+}
+
+.income-outer .item .item-inner .top .star-icon {
+    color: #FAA719;
+
+}
+
+.income-outer .item .item-inner .bottom {
+    display: flex;
+    align-items: center;
+}
+
+.income-outer .item .item-inner .bottom img {
+    width: 100%;
+}
+.income-outer .item .item-inner .bottom .img-content{
+    width: 20%;
+}
+.income-outer .item .item-inner .bottom .text-content{
+    
+}
+
+/* Wallet Dashbord End */
