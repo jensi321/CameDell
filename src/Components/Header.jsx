@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Dropdown, DropdownButton, DropdownItem, Modal, Nav, Navbar } from 'react-bootstrap'
+import { Container, Dropdown, DropdownButton, DropdownItem, Modal, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { FaMapMarkerAlt, FaSearch } from 'react-icons/fa'
 import { FaHeart, FaRegBell, FaUser } from 'react-icons/fa6'
 import { MdOutlineQrCodeScanner } from 'react-icons/md'
@@ -119,7 +119,14 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav" className='justify-content-center'>
                         <Nav className="">
                             <NavLink to="/">All</NavLink>
-                            <NavLink to="/">Categories</NavLink>
+                            <NavDropdown title="Categories" id="basic-nav-dropdown">
+                                <NavLink to=''>Automotive</NavLink>
+                                <NavLink to=''>Fashion & Clothing</NavLink>
+                                <NavLink to=''>Toys & Games</NavLink>
+                                <NavLink to=''>Household & Garden</NavLink>
+                                <NavLink to=''>Sports & Leisure</NavLink>
+                                <NavLink to=''>Food & Drinks</NavLink>
+                            </NavDropdown>
                             <NavLink to="">Discount</NavLink>
                             <NavLink to="">Cashback</NavLink>
                             <NavLink to="">Vouchers</NavLink>

@@ -1,14 +1,16 @@
 import React from 'react'
-import { FaAngleRight, FaFacebook, FaInstagram, FaLinkedin, FaSquareXTwitter } from 'react-icons/fa6'
+import { FaFacebook, FaInstagram, FaLinkedin, FaSquareXTwitter } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container">
+        <div className="footer-inner">
+
+
           <div className="top">
-            <div className="footer-inner row">
+            <div className="top-inner row">
               <div className="col-12 col-sm-6 col-lg-3 logo-item item">
                 <div className="footer-logo">
                   <img src="assets/Image/logo.png" alt="Footer-logo" />
@@ -135,8 +137,8 @@ const Footer = () => {
                 <form method='post'>
                   <div className="input-groups">
                     <input type="email" name="email" id="email" placeholder='Email Address' />
-                    <button>
-                      <FaAngleRight />
+                    <button className='button'>
+                      Subscribe
                     </button>
                   </div>
                 </form>
@@ -149,6 +151,14 @@ const Footer = () => {
           <div className="bottom">
             <div className="bottom-inner">
               <p><b>From Dreams to Reality. </b> Copyright © 2024 Calgell Bharat Private Limited. All Rights Reserved.</p>
+              <ul>
+                <li>
+                  <Link to={''}>India</Link>
+                </li>
+                <li>
+                  <Link to={''}>English</Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -37,7 +37,8 @@ const Login = ({ onClose, onOpenMemberSignUp }) => {
             </div>
           </div>
         </div>
-      </div></>
+      </div>
+      </>
   )
 }
 

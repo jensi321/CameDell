@@ -1,14 +1,14 @@
 import React from 'react'
-import Slider from '../User/Slider'
-import TypeOfCategory from '../User/TypeOfCategory'
-import CashBack from '../User/CashBack'
-import Exclusive from '../User/Exclusive'
-import Treandincupon from '../User/Treandincupon'
-import Store from '../User/Store'
-import Voucher from '../User/Voucher'
-import Subscribe from '../User/Subscribe'
-import DealofDay from '../User/DealofDay'
+import Slider from '../User/Home/Slider'
+import TypeOfCategory from '../User/Home/TypeOfCategory'
+import CashBack from '../User/Home/CashBack'
+import Exclusive from '../User/Home/Exclusive'
+import Treandincupon from '../User/Home/Treandincupon'
+import Voucher from '../User/Home/Voucher'
+import Subscribe from '../User/Home/Subscribe'
+import DealofDay from '../User/Home/DealofDay'
 import TermsSetTimeOut from '../User/TermsSetTimeOut'
+import Store from '../User/Home/Store'
 
 const Home = () => {
     return (

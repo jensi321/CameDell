@@ -16,13 +16,13 @@ const DealofDay = () => {
             0: {
                 items: 1,
             },
-            400: {
-                items: 1,
-            },
-            600: {
+            576: {
                 items: 2,
             },
-            700: {
+            767: {
+                items: 3
+            },
+            990: {
                 items: 4,
             },
             1200: {
@@ -85,7 +85,7 @@ const DealofDay = () => {
                                             </div>
 
                                             <div className="price">
-                                            <span className='ruppes-icon'>₹ </span> {i.price}
+                                                <span className='ruppes-icon'>₹ </span> {i.price}
                                                 <span><strike>{i.originalprice}</strike></span></div>
                                             <Link to='' className='button'>Buy now</Link>
                                         </div>

@@ -13,6 +13,10 @@ import MyCupon from './MyCupon'
 import SubscriptionPlan from '../SubscriptionPlan'
 import Wallet from './Wallet'
 import SubscriptionHistory from './SubscriptionHistory'
+import LoyaltyPoints from './LoyaltyPoints'
+import ReferralID from './ReferralID'
+import UsertermsCondition from './UsertermsCondition'
+import ChangePassword from './ChangePassword'
 
 const DashbordHeader = () => {
     return (
@@ -67,35 +71,35 @@ const DashbordHeader = () => {
                     {
                         label: 'Loyalty Points',
                         key: '7',
-                        children: 'Loyalty Points',
+                        children: <LoyaltyPoints />,
                         icon: <FaDatabase />
 
                     },
                     {
                         label: 'Referral ID',
                         key: '8',
-                        children: 'Referral ID',
+                        children: <ReferralID />,
                         icon: <FaUsers />
 
                     },
                     {
                         label: 'Terms & Condition',
                         key: '9',
-                        children: 'Terms & Condition',
+                        children: <UsertermsCondition />,
                         icon: <TfiMenuAlt />
 
                     },
                     {
                         label: 'Change Password',
                         key: '10',
-                        children: 'Change Password',
+                        children: <ChangePassword />,
                         icon: <RiLockPasswordFill />
 
                     },
                     {
                         label: 'Log out',
                         key: '11',
-                        children: 'Log out',
+                        children: 'logOut',
                         icon: <IoLogOut />
 
                     },

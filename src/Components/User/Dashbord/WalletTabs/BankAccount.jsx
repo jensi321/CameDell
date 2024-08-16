@@ -54,7 +54,7 @@ const BankAccount = () => {
                             </div></div>
                         </div>
 
-                        <div className="input-buton">
+                        <div className="input-button">
                             <Link to='' className='button'>Submit</Link>
                         </div>
 

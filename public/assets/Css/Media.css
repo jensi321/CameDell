@@ -60,6 +60,10 @@
         width: 30%;
     }
 
+    .user-terms-outer .sub-terms-outer {
+        width: 40%;
+    }
+
     /* Sub Terms-condition End */
     /* Wallet Dashbord Start */
 
@@ -71,7 +75,37 @@
         padding: 0 50px;
     }
 
+    .income-outer .compny-profile .item-inner .top img {
+        height: 12px;
+    }
+
+    .income-outer .compny-profile .item-inner .top .rating,
+    .income-outer .compny-profile .item-inner .top p {
+        font-size: 10px;
+    }
+
+    .income-outer .compny-profile .item-inner .bottom .getoff span {
+        display: block;
+    }
+
     /* Wallet Dashbord End */
+
+    /* Loyalty-points Strat */
+    .loyalty-points-outer .bestdeal-outer .item {
+        width: 25%;
+    }
+
+    .loyalty-point-modal,
+    .trackmodal-outer {
+        width: 40%;
+    }
+
+    /* Loyalty-points End */
+
+    /* Change Password Start */
+    .change-password-outer .change-password {
+        width: 70%;
+    }
 
 
 
@@ -189,7 +223,7 @@
     }
 
     .navbar .bottom .search,
-    .navbar .bottom .dropdown {
+    .navbar .bottom .login-dropdown.dropdown {
         display: block;
         padding-left: 15px;
         padding-right: 15px;
@@ -200,6 +234,12 @@
         border: none !important;
         text-align: left;
         padding: 8px 15px !important;
+    }
+
+    .navbar .bottom .dropdown-menu.show>a {
+        display: block;
+        width: 100%;
+        border: none;
     }
 
     .navbar .bottom .search {
@@ -325,6 +365,7 @@
 
     /* Sub Terms-condition Start */
     .sub-model-outer,
+    .user-terms-outer .sub-terms-outer,
     .sub-terms-outer {
         width: 40%;
     }
@@ -363,7 +404,8 @@
     /* Notification End */
 
     /* Loyalty Points Start */
-    .loyaltipoints-outer {
+    .loyaltipoints-outer,
+    .trackmodal-outer {
         width: 60%;
     }
 
@@ -391,6 +433,45 @@
 
     /* Wallet Dashbord End */
 
+
+    /* Loyalty-points Strat */
+    .loyalty-points-outer .bestdeal-outer .item {
+        width: 33.33%;
+    }
+
+    .loyalty-point-modal {
+        width: 50%;
+    }
+
+
+    /* Loyalty-points End */
+
+    .change-password-outer .change-password {
+        width: 100%;
+    }
+
+    .become-outer .become-inner {
+        text-align: center;
+    }
+
+    .become-outer .img-content {
+        margin-left: 0;
+    }
+
+    .become-outer .img-content img {
+        transform: rotate(0deg);
+    }
+
+    .subscribe-outer .text-content {
+        margin-left: 0;
+    }
+
+    /* Faq  Start*/
+    .faq-outer .item:first-child {
+        order: 2;
+    }
+
+    /* Faq  End*/
 
 }
 
@@ -461,6 +542,7 @@
 
     /* Sub Terms-condition Start */
     .sub-model-outer,
+    .user-terms-outer .sub-terms-outer,
     .sub-terms-outer {
         width: 60%;
     }
@@ -510,6 +592,23 @@
 
 
     /* Wallet Dashbord End */
+
+    /* Loyalty-points Strat */
+
+    .loyalty-points-outer .top .current-coins {
+        width: 60%;
+    }
+
+    .loyalty-points-outer .bestdeal-outer .item {
+        width: 50%;
+    }
+
+    .loyalty-point-modal,
+    .trackmodal-outer {
+        width: 70%;
+    }
+
+    /* Loyalty-points End */
 }
 
 
@@ -566,11 +665,13 @@
 
     /* Popular Store End */
     /* Login Start */
-    .login-outer .left {
+    .login-outer .left,
+    .change-password-outer .change-password .left {
         border-radius: 10px 10px 0 0;
     }
 
-    .login-outer .right {
+    .login-outer .right,
+    .change-password-outer .change-password .right {
         border-radius: 0 0 10px 10px;
     }
 
@@ -645,6 +746,7 @@
         width: 90%;
     }
 
+    .user-terms-outer .sub-terms-outer,
     .sub-terms-outer {
         width: 80%;
     }
@@ -683,5 +785,37 @@
     }
 
     /* Wallet Dashbord End */
+    /* Loyalty-points Strat */
+    .loyalty-points-outer .top {
+        flex-wrap: wrap;
+    }
+
+    .loyalty-points-outer .top .current-coins {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .loyalty-points-outer .top .oreder-now {
+        width: 100%;
+    }
+
+    .loyalty-points-outer .bestdeal-outer .item {
+        width: 100%;
+    }
+
+    .loyalty-point-modal,
+    .trackmodal-outer {
+        width: 90%;
+    }
+
+    /* Loyalty-points End */
+
+    .become-outer .img-content img {
+        width: 100%;
+    }
+
+    .faq-outer .item img {
+        width: 100%;
+    }
 
 }

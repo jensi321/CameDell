@@ -13,6 +13,9 @@ import VouchersPages from './Components/Pages/VouchersPages';
 import Home from './Components/Pages/Home';
 import Dashbord from './Components/Pages/Dashbord';
 import Automotive from './Components/Pages/Automotive';
+import AboutUsPage from './Components/Pages/AboutUsPage';
+import FaqPage from './Components/Pages/FaqPage';
+import Partnerwithus from './Components/Pages/Partnerwithus';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,6 +35,9 @@ root.render(
         <Route path='/dicountcoupon' element={<DiscountPage />} />
         <Route path='/voucher' element={<VouchersPages />} />
         <Route path='/dashbord' element={<Dashbord />} />
+        <Route path='/aboutus' element={<AboutUsPage />} />
+        <Route path='/faq' element={<FaqPage />} />
+        <Route path='/partnerwithus' element={<Partnerwithus />} />
       </Routes>
       <Footer />
 
